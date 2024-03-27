@@ -20,4 +20,12 @@ export function szerkezet(lista){
         
     }
     mezoELEM.html(mezo)
+    esemeny(lista)
+}
+
+export function esemeny(lista){
+    const mezoElemek = $("#jatekter div")
+    mezoElemek.on("click", function(event){
+        console.log($(event.target))
+    })
 }
