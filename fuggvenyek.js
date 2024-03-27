@@ -12,7 +12,12 @@ export function szerkezet(lista){
     let mezo = ""
     
     for(let i = 0; i<lista.length; i++){
-        mezo += `<div>${lista[i]}</div>`
+        if (lista[i] == 1){
+            mezo += `<div class= "vilagit"></div>`
+        }else{
+            mezo += `<div></div>`
+        }
+        
     }
     mezoELEM.html(mezo)
 }
